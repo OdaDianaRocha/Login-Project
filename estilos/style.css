@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-image: linear-gradient(to top, darkviolet, violet);    
+    background-color: blueviolet;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.486);
+    transition: width .2, height .2;
+}
+
+section#login > div#imagem {
+    display: block;
+    background: lightgray  url(..//imagens/projectwater.jpg) no-repeat;
+    height: 200px;
+    background-size: cover;
+    
+}
+
+section#login > div#formulario {
+    padding: 10px;
+    display: block;
+
+}
+
+form > input[type=submit] {
+    display: block;    
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: mediumorchid;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+form > div.campo {
+    background-color: blue;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0;
+
+}
+
+div.campo > label {
+    display: none;
+}
+
+
+form > input[type=submit]:hover { 
+    background-color: violet;
+}
+
+form > div > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border: 3px solid rgba(124, 104, 238, 0.521);
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 5px;
+}
+
+form > div > a:hover {
+    background-color: lightskyblue;
+}
